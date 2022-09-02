@@ -255,6 +255,7 @@
 #include "NoteEcho.h"
 #include "VelocityCurve.h"
 #include "BoundsToPulse.h"
+#include "NoteSplitter.h"
 
 #include <juce_core/juce_core.h>
 
@@ -490,6 +491,7 @@ ModuleFactory::ModuleFactory()
    REGISTER_HIDDEN(MidiCapturer, midicapturer, kModuleCategory_Note);
    REGISTER_HIDDEN(ScriptReferenceDisplay, scriptingreference, kModuleCategory_Other);
    REGISTER_HIDDEN(MultitrackRecorderTrack, multitrackrecordertrack, kModuleCategory_Audio);
+   REGISTER_HIDDEN(NoteSplitter, notesplitter, kModuleCategory_Note);
 }
 
 void ModuleFactory::Register(std::string type, CreateModuleFn creator, CanCreateModuleFn canCreate, ModuleCategory moduleType, bool hidden, bool experimental)

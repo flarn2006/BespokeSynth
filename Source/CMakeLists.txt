@@ -413,6 +413,8 @@ target_sources(BespokeSynth PRIVATE
     NoteSinger.h
     NoteSorter.cpp
     NoteSorter.h
+	NoteSplitter.cpp
+	NoteSplitter.h
     NoteStepSequencer.cpp
     NoteStepSequencer.h
     NoteStepper.cpp
